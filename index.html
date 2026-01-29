@@ -2,8 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مكتب العقارات</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     /* شاشة البداية */
     #splash {
@@ -63,20 +63,21 @@
       padding: 0;
       margin: 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       background: #003366;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     nav ul li {
-      margin: 0 20px;
+      margin: 5px 10px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 12px 18px;
+      padding: 10px 14px;
       display: inline-block;
       transition: 0.3s;
       border-radius: 6px;
@@ -90,19 +91,25 @@
 
     /* المحتوى */
     main {
-      padding: 40px;
+      padding: 20px;
       text-align: center;
     }
 
     main h2 {
-      font-size: 26px;
+      font-size: 24px;
       color: #000000;
       margin-bottom: 15px;
     }
 
     main p {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 25px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .card {
@@ -110,8 +117,9 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      display: inline-block;
-      margin: 20px;
+      margin: 15px;
+      flex: 1 1 300px;
+      max-width: 350px;
       transition: 0.3s;
     }
 
@@ -123,6 +131,7 @@
     .card img {
       border-radius: 10px;
       max-width: 100%;
+      height: auto;
     }
 
     /* الفوتر */
@@ -131,17 +140,22 @@
       color: white;
       text-align: center;
       padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
       box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* موبايل */
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      main h2 { font-size: 20px; }
+      nav ul { flex-direction: column; }
+      .card { max-width: 100%; }
     }
   </style>
 </head>
 <body>
   <!-- شاشة البداية -->
   <div id="splash">
-    <img src="images/logo.png" alt="شعار المكتب">
+    <img src="https://via.placeholder.com/200" alt="شعار المكتب">
   </div>
 
   <!-- الهيدر -->
@@ -164,49 +178,48 @@
     <h2>أفضل العقارات بين يديك </h2>
     <p>نوفر لك خيارات متنوعة تناسب احتياجاتك.</p>
 
-    <div class="card">
-      <img src="images\1+.jpg" alt="صورة عقار" width="400">
-      <h3>عقار فاخر في قلب المدينة</h3>
-      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
-    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="صورة عقار">
+        <h3>عقار فاخر في قلب المدينة</h3>
+        <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+      </div>
 
-    <div class="card">
-      <img src="images\2.jpg" alt="صورة فيلا" width="400">
-      <h3>فيلا راقية بإطلالة ساحرة</h3>
-      <p>مساحات واسعة وحديقة خاصة.</p>
-    </div>
-     <div class="card">
-      <img src="images\4.jpg" alt="صورة عقار" width="400">
-      <h3>عقار فاخر في قلب المدينة</h3>
-      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
-    </div>
- <div class="card">
-   
-      <h3>عقار فاخر في قلب المدينة</h3>es
-      <img src=" "images\4.jpg" alt="صورة عقار" width="400">
-      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
-    </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="صورة فيلا">
+        <h3>فيلا راقية بإطلالة ساحرة</h3>
+        <p>مساحات واسعة وحديقة خاصة.</p>
+      </div>
 
-    <div class="card">
-      <img src="images\WhatsApp Image 2026-01-28 at 10.15.37 PM.jpg.jpg" alt="صورة عقار" width="400">
-      
-      <p>مكتب ابو رحاب للمقاولات</p>
-    </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="صورة عقار">
+        <h3>عقار فاخر في قلب المدينة</h3>
+        <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+      </div>
 
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="صورة عقار">
+        <h3>عقار فاخر في قلب المدينة</h3>
+        <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="صورة عقار">
+        <p>مكتب ابو رحاب للمقاولات</p>
+      </div>
+    </div>
   </main>
 
   <!-- الفوتر -->
-  
-    
-   <footer>
-    <p>جميع الحقوق محفوظة //
-      الراعي الرسمي للويب سيت 
-    
-    https://hmztzyadtarq-wq.github.io/CP-tarek/
+  <footer>
+    <p>جميع الحقوق محفوظة // الراعي الرسمي للويب سيت  
+    <br> <a href="https://hmztzyadtarq-wq.github.io/CP-tarek/" style="color:#1abc9c;">رابط الموقع</a>
     </p>
   </footer>
 </body>
 </html>
+
+
 
 
 
