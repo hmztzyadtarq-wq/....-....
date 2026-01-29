@@ -2,6 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تواصل معنا</title>
   <link rel="stylesheet" href="style.css">
   <!-- خط عربي أنيق -->
@@ -31,6 +32,7 @@
       background: #003366;
       margin: 0;
       padding: 10px;
+      flex-wrap: wrap;
     }
     nav ul li { margin: 0 15px; }
     nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
@@ -51,6 +53,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       width: 400px;
+      max-width: 100%;
     }
 
     .contact-form h2 {
@@ -89,6 +92,7 @@
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 400px;
     }
     .social h3 {
       color: #004080;
@@ -106,7 +110,7 @@
 
     .social img {
       display: block;
-      margin: 15px auto 0 auto; /* الصورة تحت الروابط مباشرة */
+      margin: 15px auto 0 auto;
       max-width: 250px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -137,6 +141,12 @@
       text-align: center;
       padding: 15px;
       margin-top: 30px;
+    }
+
+    /* موبايل */
+    @media (max-width: 600px) {
+      .contact-container { flex-direction: column; align-items: center; }
+      .contact-form, .social { width: 100%; max-width: 100%; }
     }
   </style>
 </head>
@@ -187,7 +197,7 @@
         <a href="mailto:mahmoudaborehab68@gmail.com"><i class="fab fa-google"></i></a>
 
         <!-- الصورة تحت الروابط مباشرة -->
-        <img src=images\1.png" alt="صورة تواصل">
+        <img src="https://via.placeholder.com/250x150" alt="صورة تواصل">
       </div>
     </div>
 
@@ -206,6 +216,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
