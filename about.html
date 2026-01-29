@@ -2,8 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>عن المكتب</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -28,7 +28,6 @@
       background: #003366;
       margin: 0;
       padding: 8px;
-      flex-wrap: wrap;
     }
     nav ul li { margin: 0 12px; }
     nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
@@ -58,6 +57,7 @@
       border-radius: 10px;
       margin-bottom: 10px;
       object-fit: cover;
+      cursor: pointer;
     }
 
     .card h3 {
@@ -75,12 +75,6 @@
       color: #fff;
       text-align: center;
       padding: 12px;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-      nav ul { flex-direction: column; }
-      .card { flex: 1 1 100%; }
     }
   </style>
 </head>
@@ -89,10 +83,10 @@
     <h1>عن مكتب العقارات</h1>
     <nav>
       <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html">عن المكتب</a></li>
-        <li><a href="staff.html">الموظفون</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="index.html">🏠 الرئيسية</a></li>
+        <li><a href="about.html">ℹ️ عن المكتب</a></li>
+        <li><a href="staff.html">👥 الموظفون</a></li>
+        <li><a href="contact.html">📞 تواصل معنا</a></li>
       </ul>
     </nav>
   </header>
@@ -103,8 +97,8 @@
       
       <!-- صورة المكتب -->
       <div class="card">
-        <a href="https://via.placeholder.com/600" target="_blank">
-          <img src="https://via.placeholder.com/600" alt="صورة المكتب">
+        <a href="images/l;jf.jpg" target="_blank">
+          <img src="images/l;jf.jpg" alt="مكتبنا">
         </a>
         <h3>مكتبنا</h3>
         <p>مكتب مجهز بأحدث التقنيات لاستقبال العملاء وتقديم أفضل خدمة.</p>
@@ -112,26 +106,26 @@
 
       <!-- السجل التجاري -->
       <div class="card">
-        <a href="https://via.placeholder.com/600" target="_blank">
-          <img src="https://via.placeholder.com/600" alt="السجل التجاري">
+        <a href="images/ملف تعريف المكتب.pdf" target="_blank">
+          <img src="images/تنزيل.png" alt="السجل التجاري">
         </a>
-        <h3>سابقه أعمال المكتب</h3>
+        <h3>سابقه اعمال المكتب</h3>
         <p>مرخص رسمياً ومعتمد من الجهات الحكومية.</p>
       </div>
 
       <!-- شهادة تقدير -->
       <div class="card">
-        <a href="https://via.placeholder.com/600" target="_blank">
-          <img src="https://via.placeholder.com/600" alt="شهادة تقدير">
+        <a href="images/.jpg" target="_blank">
+          <img src="images/.jpg" alt="شهادة تقدير">
         </a>
         <h3>شهادة تقدير</h3>
         <p>نعمل دائماً على تطوير خدماتنا لنيل ثقة عملائنا.</p>
       </div>
 
-      <!-- شهادة تقدير من شركة الصفوة -->
+      <!-- شهادة تقدير من الصفوة -->
       <div class="card">
-        <a href="https://via.placeholder.com/600" target="_blank">
-          <img src="https://via.placeholder.com/600" alt="شهادة تقدير من الصفوة">
+        <a href="images/WhatsApp Image 2026-01-28 at 11.20.37 PM.jpg" target="_blank">
+          <img src="images/WhatsApp Image 2026-01-28 at 11.20.37 PM.jpg" alt="شهادة تقدير من الصفوة">
         </a>
         <h3>شهادة تقدير من شركة الصفوة</h3>
         <p>نعمل دائماً على تطوير خدماتنا لنيل ثقة عملائنا.</p>
@@ -140,7 +134,7 @@
       <!-- فيديو -->
       <div class="card">
         <video controls>
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="images/WhatsApp Video 2026-01-28 at 11.19.11 PM.mp4" type="video/mp4">
           متصفحك لا يدعم تشغيل الفيديو.
         </video>
         <h3>جولة داخل المكتب</h3>
@@ -151,10 +145,13 @@
   </main>
 
   <footer>
-    <p>العنوان // شارع النيل بجوار مدرسة عمر مكرم</p>
+    <p>📍 العنوان: شارع النيل بجوار مدرسة عمر مكرم</p>
   </footer>
 </body>
 </html>
+
+
+
 
 
 
