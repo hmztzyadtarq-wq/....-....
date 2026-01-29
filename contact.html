@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تواصل معنا</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- خط عربي أنيق -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <!-- أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: #003366;
+      margin: 0;
+      padding: 10px;
+    }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+
+    /* الفورم داخل مربع */
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    .contact-form h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .contact-form button {
+      background: #004080;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #003366;
+    }
+
+    /* قسم السوشيال ميديا */
+    .social {
+      text-align: center;
+      flex: 1;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .social h3 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    .social a {
+      font-size: 30px;
+      margin: 0 10px;
+      color: #004080;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #ffcc00;
+    }
+
+    .social img {
+      display: block;
+      margin: 15px auto 0 auto; /* الصورة تحت الروابط مباشرة */
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* اللوحة أسفل الصفحة */
+    .info-board {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .info-board h3 {
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    footer {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>تواصل معنا</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن المكتب</a></li>
+        <li><a href="staff.html">الموظفون</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <!-- الفورم -->
+      <div class="contact-form">
+        <h2>أرسل لنا رسالة</h2>
+        <form action="send.php" method="POST">
+          <label>الاسم:</label>
+          <input type="text" name="name" required>
+
+          <label>البريد الإلكتروني:</label>
+          <input type="email" name="email" required>
+
+          <label>رقم الهاتف:</label>
+          <input type="text" name="phone">
+
+          <label>اختر موعد:</label>
+          <input type="date" name="date">
+
+          <label>رسالتك:</label>
+          <textarea name="message" rows="5"></textarea>
+
+          <button type="submit">إرسال</button>
+        </form>
+      </div>
+
+      <!-- السوشيال ميديا -->
+      <div class="social">
+        <h3>تابعنا على:</h3>
+        <a href="https://facebook.com/yourpage"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourpage"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/201017750929"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:mahmoudaborehab68@gmail.com"><i class="fab fa-google"></i></a>
+
+        <!-- الصورة تحت الروابط مباشرة -->
+        <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\1.png" alt="صورة تواصل">
+      </div>
+    </div>
+
+    <!-- اللوحة أسفل الصفحة -->
+    <div class="info-board">
+      <h3>📍 العنوان</h3>
+      <p>شارع النيل بجوار مدرسة عمر مكرم</p>
+      <h3>📞 أرقام التواصل</h3>
+      <p>01017750929 - 0123456789</p>
+    </div>
+  </main>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© جميع الحقوق محفوظة - مكتب العقارات 2026</p>
+  </footer>
+</body>
+</html>
+
+

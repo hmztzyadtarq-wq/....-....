@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مكتب العقارات</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* شاشة البداية */
+    #splash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 1s ease forwards;
+      animation-delay: 2s;
+    }
+
+    #splash img {
+      width: 200px;
+      animation: zoomIn 2s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    /* تنسيقات عامة */
+    body {
+      font-family: "Tahoma", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    /* الهيدر */
+    header {
+      background: linear-gradient(135deg, #004080, #0066cc);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* القائمة */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: #003366;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 18px;
+      display: inline-block;
+      transition: 0.3s;
+      border-radius: 6px;
+    }
+
+    nav ul li a:hover {
+      background: #1abc9c;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    /* المحتوى */
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 26px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+
+    main p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      margin: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    /* الفوتر */
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- شاشة البداية -->
+  <div id="splash">
+    <img src="images/logo.png" alt="شعار المكتب">
+  </div>
+
+  <!-- الهيدر -->
+  <header>
+    <h1>🏢 مرحباً بكم في مكتب العقارات</h1>
+  </header>
+
+  <!-- القائمة -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 الرئيسية</a></li>
+      <li><a href="about.html">ℹ️ عن المكتب</a></li>
+      <li><a href="staff.html">👥 الموظفون</a></li>
+      <li><a href="contact.html">📞 تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- المحتوى -->
+  <main>
+    <h2>أفضل العقارات بين يديك </h2>
+    <p>نوفر لك خيارات متنوعة تناسب احتياجاتك.</p>
+
+    <div class="card">
+      <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\1+.jpg" alt="صورة عقار" width="400">
+      <h3>عقار فاخر في قلب المدينة</h3>
+      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+    </div>
+
+    <div class="card">
+      <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\2.jpg" alt="صورة فيلا" width="400">
+      <h3>فيلا راقية بإطلالة ساحرة</h3>
+      <p>مساحات واسعة وحديقة خاصة.</p>
+    </div>
+     <div class="card">
+      <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\4.jpg" alt="صورة عقار" width="400">
+      <h3>عقار فاخر في قلب المدينة</h3>
+      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+    </div>
+ <div class="card">
+      <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\.jpg" alt="صورة عقار" width="400">
+      <h3>عقار فاخر في قلب المدينة</h3>
+      <p>موقع مميز، تصميم عصري، وخدمات متكاملة.</p>
+    </div>
+
+    <div class="card">
+      <img src="c:\Users\waeL\Desktop\ابواحمدبصله\images\WhatsApp Image 2026-01-28 at 10.15.37 PM.jpg.jpg" alt="صورة عقار" width="400">
+      
+      <p>مكتب ابو رحاب للمقاولات</p>
+    </div>
+
+  </main>
+
+  <!-- الفوتر -->
+  
+    
+   <footer>
+    <p>جميع الحقوق محفوظة //
+      الراعي الرسمي للويب سيت 
+    
+    https://hmztzyadtarq-wq.github.io/CP-tarek/
+    </p>
+  </footer>
+</body>
+</html>
+
+
+
+
